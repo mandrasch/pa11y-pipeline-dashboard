@@ -22,6 +22,7 @@ Go to GitHub actions &raquo; generate reports &raquo; start report generation wi
 
 ## TODOs
 
+- [ ] axe + htmlcs will lead to duplicates? how to present this better? what is the default?
 - [ ] `(npm ...) || true` is suboptimal, but otherwise exit code 2 will be sent?
   - https://github.com/pa11y/pa11y-ci/issues/94
   - [ ] Is pa11y better suited for our purposes? Exit code can be configured: https://www.npmjs.com/package/pa11y#exit-codes, but multiple URLs can't be imported via config?
@@ -46,6 +47,7 @@ npm i @picocss/pico
 
 ## Resources
 
+- https://www.craigabbott.co.uk/blog/axe-core-vs-pa11y/
 - https://ashleemboyer.com/blog/how-i-added-a-pa11y-ci-github-action-to-my-next-js-site
 - https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe
 - https://github.com/CivicActions/accessibility/blob/main/.github/workflows/pa11y.yml
