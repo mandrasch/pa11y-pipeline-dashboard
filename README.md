@@ -42,12 +42,15 @@ npm i @picocss/pico
 
 ## Troubleshooting
 
-- timeout is important. if it is too short, it will fail without notice.
+- Timeout is important. If it is too short, pa11y-ci will fail without notice.
 
 ## Resources
 
 - https://ashleemboyer.com/blog/how-i-added-a-pa11y-ci-github-action-to-my-next-js-site
-- https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe - https://github.com/CivicActions/accessibility/blob/main/.github/workflows/pa11y.yml - - https://github.com/CivicActions/accessibility/blob/main/.pa11yci
+- https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe
+- https://github.com/CivicActions/accessibility/blob/main/.github/workflows/pa11y.yml
+- https://github.com/CivicActions/accessibility/blob/main/.pa11yci
+
 <hr>
 
 Original docs:
