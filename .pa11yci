@@ -1,13 +1,12 @@
 {
 	"defaults": {
-		"timeout": 1000,
+		"timeout": 5000,
 		"viewport": {
 			"width": 320,
 			"height": 480
-		}
-	},
-	"defaults": {
+		},
 		"reporters": [
+			"cli",
 			[
 				"json",
 				{
