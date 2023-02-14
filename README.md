@@ -16,7 +16,9 @@ Go to GitHub actions &raquo; generate reports &raquo; start report generation wi
 
 ## TODOs
 
-- [ ] `npx pa11y-ci | true` is suboptimal, but otherwise exit code 2 will be sent?
+- [ ] `(npm ...) || true` is suboptimal, but otherwise exit code 2 will be sent?
+  - https://github.com/pa11y/pa11y-ci/issues/94
+  - [ ] Is pa11y better suited for our purposes? Exit code can be configured: https://www.npmjs.com/package/pa11y#exit-codes, but multiple URLs can't be imported via config?
 - [ ] Use shiki for HTML syntax highlighting?
 - [ ] JSON reporter to file with `fileName:'./static/` does not work, maybe because the working directory is not found correctly?
 
@@ -30,10 +32,16 @@ npm i --save-dev sass svelte-preprocess @sveltejs/adapter-static
 npm i @picocss/pico
 ```
 
+### pa11y-ci config
+
+## Troubleshooting
+
+- timeout is important. if it is too short, it will fail without notice.
+
 ## Resources
 
 - https://ashleemboyer.com/blog/how-i-added-a-pa11y-ci-github-action-to-my-next-js-site
-
+- https://accessibility.civicactions.com/posts/automated-accessibility-testing-leveraging-github-actions-and-pa11y-ci-with-axe - https://github.com/CivicActions/accessibility/blob/main/.github/workflows/pa11y.yml - - https://github.com/CivicActions/accessibility/blob/main/.pa11yci
 <hr>
 
 Original docs:

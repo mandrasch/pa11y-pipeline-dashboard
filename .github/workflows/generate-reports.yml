@@ -18,25 +18,23 @@ jobs:
           node-version: 18
 
       - run: npm ci
-      # https://github.com/CivicActions/accessibility/
+
+      # Fork of https://github.com/CivicActions/accessibility/, also
+      # stores pa11y-ci CLI output to a file (including errors, 2>&1).
+      # We use '|| true' workaround to avoid returning exit code 2 (error)
       - run: (npm run pa11y-generate-reports 2>&1 | tee static/pa11y-reports/pa11y_cli_output.txt) || true
 
       # for debug:
-      - run: cat static/pa11y-reports/pa11y_cli_output.txt
-      - run: cat static/pa11y-reports/reports.json
       #- run: pwd && cd ./static && ls -R
+      # - run: cat static/pa11y-reports/pa11y_cli_output.txt
+      # - run: cat static/pa11y-reports/reports.json
 
       - name: Archive pa11y reports
         uses: actions/upload-artifact@v3
         with:
           name: pa11y-reports
           path: |
-            **/*
-            !node_modules/**/*
-          #path: static/pa11y-reports
-
-      # for debug:
-      - run: cd ./static/pa11y-reports/ && ls -ls
+            static/pa11y-reports
 
       - name: Install and Build for Github Pages 🔧
         run: |
