@@ -18,9 +18,11 @@ jobs:
           node-version: 18
 
       - run: npm ci
-      - run: npx pa11y-ci
+      #- run: npm run pa11y-generate-reports
+      - run: pa11y-ci --json > static/pa11y-results/pa11y-results.json
 
       # for debug:
+      - run: cat static/pa11y-results/pa11y-results.json
       - run: pwd && cd ./static && ls -R
 
       - name: Archive pa11y reports

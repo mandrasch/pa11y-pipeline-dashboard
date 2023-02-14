@@ -6,13 +6,7 @@
 			"height": 480
 		},
 		"reporters": [
-			"cli",
-			[
-				"json",
-				{
-					"fileName": "./static/pa11y-reports/reports.json"
-				}
-			]
+			"json"
 		]
 	},
 	"urls": [
