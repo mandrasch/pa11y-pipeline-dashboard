@@ -19,8 +19,11 @@ jobs:
 
       - run: npm ci
       - run: npm run pa11y-generate-reports
+      # https://github.com/CivicActions/accessibility/blob/60123fa272fb58afd970d61eeb78f6c37885f050/.github/workflows/pa11y.yml
+      - run: npm run pa11y-generate-reports 2>&1 | tee static/pa11y-reports/pa11y_cli_output.txt
 
       # for debug:
+      - run: cat static/pa11y-reports/pa11y_cli_output.txt
       - run: cat static/pa11y-reports/reports.json
       #- run: pwd && cd ./static && ls -R
 
