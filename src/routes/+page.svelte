@@ -13,6 +13,11 @@
 	and other tools.
 </p>
 
+<small
+	>Both html code sniffer (htmlcs) and axe-core are currently used for testing, this can lead to
+	duplicate error messages.</small
+>
+
 {#each Object.entries(data.pa11yResults.results) as [siteTitle, siteResults]}
 	<h2>Site: <a href={siteTitle}>{siteTitle.replace('https://', '').slice(0, -1)}</a></h2>
 
@@ -31,6 +36,7 @@
 
 					<pre>
                  <code>{siteResult.context}</code></pre>
+					<small>Runner: {siteResult.runner}</small>
 				</article>
 			{/each}
 		</details>

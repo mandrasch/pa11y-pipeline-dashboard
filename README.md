@@ -23,6 +23,7 @@ Go to GitHub actions &raquo; generate reports &raquo; start report generation wi
 ## TODOs
 
 - [ ] axe + htmlcs will lead to duplicates? how to present this better? what is the default?
+- [ ] Update to WCAG 2.1 AA possible?
 - [ ] `(npm ...) || true` is suboptimal, but otherwise exit code 2 will be sent?
   - https://github.com/pa11y/pa11y-ci/issues/94
   - [ ] Is pa11y better suited for our purposes? Exit code can be configured: https://www.npmjs.com/package/pa11y#exit-codes, but multiple URLs can't be imported via config?
