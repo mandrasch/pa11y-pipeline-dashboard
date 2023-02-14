@@ -19,7 +19,7 @@ jobs:
 
       - run: npm ci
       #- run: npm run pa11y-generate-reports
-      - run: pa11y-ci --json > static/pa11y-reports/pa11y-reports.json
+      - run: npx pa11y-ci --json > static/pa11y-reports/pa11y-reports.json
 
       # for debug:
       - run: cat static/pa11y-reports/pa11y-reports.json
