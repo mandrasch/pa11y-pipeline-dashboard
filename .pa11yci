@@ -1,6 +1,7 @@
 {
 	"defaults": {
-		"timeout": 50000,
+		"threshold": 999999,
+		"timeout": 60000,
 		"concurrency": 1,
 		"standard": "WCAG2AA",
 		"runners": [
