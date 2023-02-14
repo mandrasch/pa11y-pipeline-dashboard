@@ -20,11 +20,11 @@ jobs:
       - run: npm ci
       - run: npm run pa11y-generate-reports
 
+      # for debugging: output json directly:
+      - run: npx pa11y-ci --json
+
       # for debug:
       - run: pwd && cd ./static/pa11y-reports && ls -ls
-      - name: Debug
-        run: ls -R
-        working-directory: ./
 
       - name: Archive pa11y reports
         uses: actions/upload-artifact@v3
