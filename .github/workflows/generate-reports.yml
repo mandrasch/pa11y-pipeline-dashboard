@@ -23,14 +23,14 @@ jobs:
       # for debug:
       - run: cd ./static/pa11y-reports && ls -ls
 
-      - name: Archive reports
+      - name: Archive pa11y reports
         uses: actions/upload-artifact@v3
         with:
           name: pa11y-reports
           path: static/pa11y-reports
 
       # for debug:
-      - run: cd ./static/pa11y-reports && ls -ls
+      - run: cd ./static/pa11y-reports/ && ls -ls
 
       - name: Install and Build for Github Pages 🔧
         run: |
