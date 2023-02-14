@@ -2,7 +2,13 @@
 
 Experimental project, inspired by https://github.com/pa11y/pa11y-dashboard. Powered by [pa11y-ci](https://github.com/pa11y/pa11y-ci), [SvelteKit](https://kit.svelte.dev/) and GitHub actions.
 
+_Big kudos to [pa11y](https://github.com/pa11y)-team for providing these helpful tools as open source! 👏_
+
 ## Demo
+
+![Screenshot of dashboard, 3 sites with multiple errors](.screenshot.jpg?raw=true)
+
+https://mandrasch.github.io/pa11y-pipeline-dashboard/
 
 ## Generate reports
 

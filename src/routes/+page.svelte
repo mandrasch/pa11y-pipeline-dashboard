@@ -40,7 +40,7 @@
 
 <!-- {JSON.stringify(data.pa11yResults)} -->
 
-<div style="margin-top:250px;text-align:center;">
+<div style="margin-top:70px;text-align:center;">
 	<p>
 		<a href="https://matthias-andrasch.eu/blog/impressum-datenschutz/">Imprint & privacy</a> |
 		<a href="https://github.com/mandrasch/pa11y-pipeline-dashboard">Source Code</a>
