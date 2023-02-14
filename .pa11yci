@@ -1,12 +1,18 @@
 {
 	"defaults": {
 		"timeout": 5000,
+		"concurrency": 1,
 		"viewport": {
 			"width": 320,
 			"height": 480
 		},
 		"reporters": [
-			"json"
+			[
+				"json",
+				{
+					"fileName": "./static/pa11y-reports/reports.json"
+				}
+			]
 		]
 	},
 	"urls": [

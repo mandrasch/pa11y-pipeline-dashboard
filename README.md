@@ -6,17 +6,19 @@ Experimental project, inspired by https://github.com/pa11y/pa11y-dashboard. Powe
 
 ## Generate reports
 
-Go to GitHub actions start report generation with "run workflow".
+Go to GitHub actions &raquo; generate reports &raquo; start report generation with "run workflow".
 
 ## Local installation
 
 - `npm install`
-- Test report generation: `npm run pa11y-generate-reports`
+- Test report generation: `npx pa11y-ci`
 - Develop frontend dashboard: `npm run dev -- -- open`
 
 ## TODOs
 
+- [ ] `npx pa11y-ci | true` is suboptimal, but otherwise exit code 2 will be sent?
 - [ ] Use shiki for HTML syntax highlighting?
+- [ ] JSON reporter to file with `fileName:'./static/` does not work, maybe because the working directory is not found correctly?
 
 ## How was this created?
 
@@ -27,6 +29,10 @@ npm i --save-dev prettier-plugin-svelte prettier
 npm i --save-dev sass svelte-preprocess @sveltejs/adapter-static
 npm i @picocss/pico
 ```
+
+## Resources
+
+- https://ashleemboyer.com/blog/how-i-added-a-pa11y-ci-github-action-to-my-next-js-site
 
 <hr>
 

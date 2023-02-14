@@ -18,12 +18,11 @@ jobs:
           node-version: 18
 
       - run: npm ci
-      #- run: npm run pa11y-generate-reports
-      - run: npx pa11y-ci --json > static/pa11y-reports/pa11y-reports.json
+      - run: npm run pa11y-generate-reports
 
       # for debug:
-      - run: cat static/pa11y-reports/pa11y-reports.json
-      - run: pwd && cd ./static && ls -R
+      - run: cat static/pa11y-reports/reports.json
+      #- run: pwd && cd ./static && ls -R
 
       - name: Archive pa11y reports
         uses: actions/upload-artifact@v3
