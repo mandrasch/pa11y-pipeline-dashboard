@@ -20,8 +20,7 @@ jobs:
       - run: npm ci
       - run: npm run pa11y-generate-reports
 
-      # build the static dashboard for showing reports
-      - run: npm run build
+      - run: cd ./static/pa11y-reports && ls -ls
 
       - name: Install and Build for Github Pages 🔧
         run: |
