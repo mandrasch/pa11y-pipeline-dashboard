@@ -1,0 +1,1 @@
+import{b as e}from"./paths-e56679cd.js";async function a(t){return{pa11yResults:await(await t.fetch(`${e}/pa11y-reports/reports.json`)).json()}}const l=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{l as _,a as l};
