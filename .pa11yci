@@ -1,0 +1,24 @@
+{
+	"defaults": {
+		"timeout": 1000,
+		"viewport": {
+			"width": 320,
+			"height": 480
+		}
+	},
+	"defaults": {
+		"reporters": [
+			[
+				"json",
+				{
+					"fileName": "./static/pa11y-reports/reports.json"
+				}
+			]
+		]
+	},
+	"urls": [
+		"https://mandrasch.dev/",
+		"https://aktuelle-erderhitzung.de",
+		"https://oerhoernchen.de"
+	]
+}
