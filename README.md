@@ -41,6 +41,8 @@ npm i @picocss/pico
 
 ### pa11y-ci config
 
+See `.pa11yci`.
+
 ## Troubleshooting
 
 - Timeout is important. If it is too short, pa11y-ci will fail without notice.
