@@ -20,6 +20,16 @@ jobs:
       - run: npm ci
       - run: npm run pa11y-generate-reports
 
+      # for debug:
+      - run: cd ./static/pa11y-reports && ls -ls
+
+      - name: Archive reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: pa11y-reports
+          path: static/pa11y-reports
+
+      # for debug:
       - run: cd ./static/pa11y-reports && ls -ls
 
       - name: Install and Build for Github Pages 🔧
@@ -33,8 +43,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-folder
-          path: |
-            build
+          path: build
+
       # https://github.com/JamesIves/github-pages-deploy-action
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
