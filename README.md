@@ -2,9 +2,11 @@
 
 Powered by [SvelteKit](https://kit.svelte.dev/), [pa11y-ci](https://github.com/pa11y/pa11y-ci) and GitHub actions.
 
-Experimental project inspired by https://github.com/pa11y/pa11y-dashboard. Big kudos to the [pa11y](https://github.com/pa11y)-team for providing these helpful tools as open source! 👏 👏 👏 
-
 Styling done via [pico.css](https://picocss.com/).
+
+Experimental project inspired by https://github.com/pa11y/pa11y-dashboard. 
+
+Big kudos to the [pa11y](https://github.com/pa11y)-team for providing these helpful tools as open source! 👏 👏 👏 
 
 ## Demo
 
