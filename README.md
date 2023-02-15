@@ -1,8 +1,8 @@
 # pa11y pipeline dashboard
 
-Powered by [pa11y-ci](https://github.com/pa11y/pa11y-ci), [SvelteKit](https://kit.svelte.dev/) and GitHub actions.
+Powered by [SvelteKit](https://kit.svelte.dev/), [pa11y-ci](https://github.com/pa11y/pa11y-ci) and GitHub actions.
 
-Experimental project inspired by https://github.com/pa11y/pa11y-dashboard. Big kudos to the [pa11y](https://github.com/pa11y)-team for providing these helpful tools as open source! 👏
+Experimental project inspired by https://github.com/pa11y/pa11y-dashboard. Big kudos to the [pa11y](https://github.com/pa11y)-team for providing these helpful tools as open source! 👏 Styling done via [pico.css](https://picocss.com/).
 
 ## Demo
 
