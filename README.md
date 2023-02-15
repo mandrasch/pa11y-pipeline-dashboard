@@ -1,8 +1,8 @@
 # pa11y pipeline dashboard
 
-Powered by [SvelteKit](https://kit.svelte.dev/), [pa11y-ci](https://github.com/pa11y/pa11y-ci) and GitHub actions.
+Run automated accessibility tests in GitHub actions, no extra server needed.
 
-Styling done via [pico.css](https://picocss.com/).
+Powered by [SvelteKit](https://kit.svelte.dev/), [pico.css](https://picocss.com/), [pa11y-ci](https://github.com/pa11y/pa11y-ci) and GitHub actions.
 
 Experimental project inspired by https://github.com/pa11y/pa11y-dashboard. 
 
@@ -32,7 +32,6 @@ Go to GitHub actions &raquo; generate reports &raquo; start report generation wi
   - https://github.com/pa11y/pa11y-ci/issues/94
   - [ ] Is pa11y better suited for our purposes? Exit code can be configured: https://www.npmjs.com/package/pa11y#exit-codes, but multiple URLs can't be imported via config?
 - [ ] Use shiki for HTML syntax highlighting?
-- [ ] JSON reporter to file with `fileName:'./static/` does not work, maybe because the working directory is not found correctly?
 
 ## How was this created?
 
